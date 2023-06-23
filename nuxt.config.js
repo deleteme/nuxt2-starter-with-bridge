@@ -54,7 +54,7 @@ export default defineNuxtConfig({
     // -- Opt-in features --
 
     // Use Vite as the bundler instead of webpack 4
-    vite: false,
+    vite: true,
 
     // Enable Nuxt 3 compatible useHead
     // meta: true,
