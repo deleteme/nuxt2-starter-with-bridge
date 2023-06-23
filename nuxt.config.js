@@ -47,5 +47,45 @@ export default defineNuxtConfig({
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  }
+  },
+  // Nuxt Bridge Feature Flags https://github.com/nuxt/bridge#feature-flags
+  bridge: {
+
+    // -- Opt-in features --
+
+    // Use Vite as the bundler instead of webpack 4
+    vite: false,
+
+    // Enable Nuxt 3 compatible useHead
+    // meta: true,
+
+
+    // -- Default features --
+
+    // Use legacy server instead of Nitro
+    // nitro: false,
+
+    // Use legacy generator rather than new nitro prerenderer
+    // nitroGenerator: false,
+
+    // Disable nuxt 3 compatible `nuxtApp` interface
+    // app: false,
+
+    // Disable Composition API support
+    // capi: false,
+
+    // ... or just disable legacy Composition API support
+    // capi: {
+    //   legacy: false
+    // },
+
+    // Do not transpile modules
+    // transpile: false,
+
+    // Disable composables auto importing
+    // imports: false,
+
+    // Do not warn about module incompatibilities
+    // constraints: false
+  },
 });
