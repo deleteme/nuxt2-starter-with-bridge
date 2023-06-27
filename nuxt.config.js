@@ -63,7 +63,7 @@ export default defineNuxtConfig({
     // -- Default features --
 
     // Use legacy server instead of Nitro
-    nitro: false,
+    nitro: true,
 
     // Use legacy generator rather than new nitro prerenderer
     // nitroGenerator: false,
@@ -83,7 +83,7 @@ export default defineNuxtConfig({
     // transpile: false,
 
     // Disable composables auto importing
-    // imports: false,
+    imports: false,
 
     // Do not warn about module incompatibilities
     // constraints: false
