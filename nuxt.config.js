@@ -63,7 +63,7 @@ export default defineNuxtConfig({
     // -- Default features --
 
     // Use legacy server instead of Nitro
-    // nitro: false,
+    nitro: false,
 
     // Use legacy generator rather than new nitro prerenderer
     // nitroGenerator: false,
