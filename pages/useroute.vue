@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1>About</h1>
-    <p>Importing from @nuxtjs/composition-api</p>
+    <h1>useRoute() demo</h1>
+    <p>Importing from @nuxtjs/composition-api or #app</p>
     <h4>fullPath</h4>
     <pre>{{fullPath}}</pre>
     <h4>hash</h4>
@@ -18,13 +18,11 @@
 </template>
 <script>
 /*import { computed, defineComponent, useRoute } from '@nuxtjs/composition-api'*/
-import { computed } from '@nuxtjs/composition-api'
-import { useRoute } from '@nuxt/bridge'
-export default ({
-  name: 'About',
+import { computed, useRoute, defineComponent } from '#app'
+export default defineComponent({
+  name: 'UseRoute',
   setup() {
     const route = useRoute();
-    console.log('route', route);
     const { fullPath, hash, meta, name, path, redirectedFrom } = route;
 
     return { fullPath, hash, meta, name, path, redirectedFrom };

@@ -24,6 +24,7 @@ export default defineNuxtConfig({
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    { src: '~/plugins/demo.js' }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -63,7 +64,7 @@ export default defineNuxtConfig({
     // -- Default features --
 
     // Use legacy server instead of Nitro
-    nitro: true,
+    nitro: false,
 
     // Use legacy generator rather than new nitro prerenderer
     // nitroGenerator: false,
