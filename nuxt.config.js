@@ -90,7 +90,7 @@ export default defineNuxtConfig({
     // constraints: false
   },
   // Disabling auto-imports this way allows you to import nuxt composables explicitly from `#imports`
-  // imports: {
-  //   autoImport: false
-  // },
+  imports: {
+    autoImport: false
+  },
 });
