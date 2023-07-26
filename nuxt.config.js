@@ -50,11 +50,10 @@ export default defineNuxtConfig({
   },
   // Nuxt Bridge Feature Flags https://github.com/nuxt/bridge#feature-flags
   bridge: {
-
     // -- Opt-in features --
 
     // Use Vite as the bundler instead of webpack 4
-    // vite: false,
+    // vite: true,
 
     // Enable Nuxt 3 compatible useHead
     // meta: true,
@@ -62,8 +61,9 @@ export default defineNuxtConfig({
 
     // -- Default features --
 
-    // Use legacy server instead of Nitro
-    // nitro: false,
+    // Use legacy server (nuxt dev) instead of Nitro (nuxi dev)
+    // If opting out of Nitro server, restore the original script tasks to use nuxt, not nuxi.
+    nitro: false,
 
     // Use legacy generator rather than new nitro prerenderer
     // nitroGenerator: false,
@@ -83,9 +83,14 @@ export default defineNuxtConfig({
     // transpile: false,
 
     // Disable composables auto importing
+    // It is recommended not to change `imports` but instead to set `imports.autoImport` to false (see below)
     // imports: false,
 
     // Do not warn about module incompatibilities
     // constraints: false
   },
+  // Disabling auto-imports this way allows you to import nuxt composables explicitly from `#imports`
+  // imports: {
+  //   autoImport: false
+  // },
 });
